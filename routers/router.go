@@ -1,7 +1,7 @@
 package routers
 
 import (
-	"../controllers"
+	"WatchBTCAddress/controllers"
 	"github.com/astaxie/beego"
 )
 
