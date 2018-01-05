@@ -91,7 +91,8 @@ func (c *MainController) Get() {
 			txinfo.Date = tm.Format("2006-01-02 15:04:05")
 			txinfo.TxID = iterm.String()
 			//判断是否为最新交易
-			if created[index].Int() > 1514894400 {
+			if created[index].Int() > 151489440 {
+				http.Get("http://v.juhe.cn/sms/send?mobile=18410205081&tpl_id=嫁给我！&tpl_value=%23code%23%3D654654&key=381489926eb25231b5c3468683d32338")
 				txinfo.Updated = true
 			}
 			//input adjust
